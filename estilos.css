@@ -1,0 +1,115 @@
+*{
+    margin:0;
+}
+
+body{
+    background-image: url('https://cine24h.net/wp-content/uploads/2018/10/background.png');
+}
+.navegador{
+    width: 100wh;
+    height: 90px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    background-color: #00000099;
+}
+
+.contenedor{
+    width: 80%;
+    display: flex;
+    height: 100%;
+}
+
+.logo{
+    position: relative;
+    top: 10%;
+    margin-right: 30px;
+} 
+
+.elemento_nav{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+    bottom: 25%;
+    padding: 0 16px;
+    color: #ffffff;
+}
+
+.elemento_nav i{
+    margin-right: 3px;
+}
+
+.buscador{
+    height: 100%;
+    width: 160;
+    position: relative;
+    left: 17%;
+}
+
+.caja_buscador{
+    width: 100%;
+    vertical-align: middle;
+    height: 40%;
+    position: relative;
+    top: 25%;
+    border-radius:25px;
+    background-image: url('./imagenes/lupa.png');
+    background-position: left;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    border: 2px solid #9c27b0;
+    background-color: rgba(0,0,0,.6);
+}
+
+/*siempre que queremos poner un icono hay que llamar a .fa o .fas porqué en realidad lo que hacen es llamar la font-family.*/
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+/* a continuación hay que poner la instrucción concreta de cada icono. fijaros que en realidad mediante el pseudo-selector ::before introducimos contenido delante de la etiqueta*/
+
+.fa-thumbs-down:before {
+  content: "\f165"; }
+
+.fa-thumbs-up:before {
+  content: "\f164"; }
+
+/*si estás familiarizado con los breakpoints de bootstrap esto te gustará*/
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.fa-xs {
+  font-size: .75em; }
+
+.fa-sm {
+  font-size: .875em; }
+
+/*poner el icono a la izquierda o a la derecha*/
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+
+/*CONTENEDOR*/
+.contenido{
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: 10%;
+    padding: 18px 0;
+    margin-top: 20px;
+    border-radius: 1%;
+    background-color:  #00000099;
+}
+
+.container{
+    height: 100vh;
+    background-color: #212121;
+    padding: 0 20px;
+}
