@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CINE24H | PELICULAS Y SERIES ONLINE GRATIS FULL HD</title>
-    <link rel="icon" href="https://cine24h.net/wp-content/uploads/2018/06/24x2-32x32.png">
+    <link
+      rel="icon"
+      href="https://cine24h.net/wp-content/uploads/2018/06/24x2-32x32.png"
+    />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/6e3f27ee66.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e3f27ee66.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="navegador">
@@ -21,26 +31,933 @@
         <nav class="nav_principal">
           <span class="logo"><img src="./imagenes/logo_cine24h.png" /></span>
           <a class="elemento_nav"><i class="fa-solid fa-house"></i>INICIO</a>
-          <a class="elemento_nav"><i class="fa-solid fa-table-cells-large"></i>ESTRENOS</a>
+          <a class="elemento_nav"
+            ><i class="fa-solid fa-table-cells-large"></i>ESTRENOS</a
+          >
           <a class="elemento_nav"><i class="fa-solid fa-video"></i>PELICULAS</a>
           <a class="elemento_nav"><i class="fa-solid fa-star"></i>SERIES</a>
           <a class="elemento_nav"><i class="fa-solid fa-list"></i>GENEROS</a>
           <a class="elemento_nav"><i class="fa-solid fa-gem"></i>VIP</a>
-          
         </nav>
         <div class="buscador">
-          <input type="text" class="caja_buscador" />
+            <input type="search" class="caja_buscador" id="caja_buscador" placeholder="Buscar..."/>
+            <img id="lupa" src="./imagenes/lupa.png">
         </div>
       </div>
     </div>
 
     <div class="contenido">
-        <div class="container">
-            <div class="categorias">
-
-            </div>
+      <div class="container">
+        <div class="categorias">
+          <figure class="cat cat_familia">
+            <img
+              class="img_cat img_familia"
+              src="./imagenes/categorias/familia.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Familia</figcaption>
+          </figure>
+          <figure class="cat cat_fantasia">
+            <img
+              class="img_cat img_fantasia"
+              src="./imagenes/categorias/fantasia.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Fantasia</figcaption>
+          </figure>
+          <figure class="cat cat_foreign">
+            <img
+              class="img_cat img_foreign"
+              src="./imagenes/categorias/foreign.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Foreign</figcaption>
+          </figure>
+          <figure class="cat cat_guerra">
+            <img
+              class="img_cat img_guerra"
+              src="./imagenes/categorias/guerra.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Guerra</figcaption>
+          </figure>
+          <figure class="cat cat_historia">
+            <img
+              class="img_cat img_historia"
+              src="./imagenes//categorias/historia.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Historia</figcaption>
+          </figure>
+          <figure class="cat cat_misterio">
+            <img
+              class="img_cat img_misterio"
+              src="./imagenes/categorias/misterio.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Misterio</figcaption>
+          </figure>
+          <figure class="cat cat_crimen">
+            <img
+              class="img_cat img_crimen"
+              src="./imagenes/categorias/crimen.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Crimen</figcaption>
+          </figure>
+          <figure class="cat cat_documental">
+            <img
+              class="img_cat img_documental"
+              src="./imagenes/categorias/documental.jpg"
+              alt=""
+            />
+            <figcaption class="cap_cat">Documental</figcaption>
+          </figure>
         </div>
+        <div class="main">
+          <div class="main_contenido">
+            <section class="estrenos">
+              <div class="top">
+                <h1 class="titulo">Estrenos</h1>
+                <a class="top_opcion">VER MÁS</a>
+              </div>
+              <div class="list_estrenos">
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/img_base.jpg"/>
+                  <figcaption class="cap_estreno">Hawkeye</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/series/squid game.jpg"/>
+                  <figcaption class="cap_estreno">Squid Game</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/peliculas/shang chi.jpg"/>
+                  <figcaption class="cap_estreno">Shang-chi</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/series/loki.jpg"/>
+                  <figcaption class="cap_estreno">Loki</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/peliculas/spirit.jpg"/>
+                  <figcaption class="cap_estreno">Spirit</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/peliculas/fast furious.jpg"/>
+                  <figcaption class="cap_estreno">Fast & Furi. 9</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/peliculas/dynasty.jpg"/>
+                  <figcaption class="cap_estreno">Dinasty War.</figcaption>
+                </figure>
+                <figure class="estrenos">
+                  <img class="img_estreno" src="./imagenes/peliculas/red.jpg"/>
+                  <figcaption class="cap_estreno">Red</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="peliculas">
+              <div class="top">
+                <h1 class="titulo">Peliculas</h1>
+                <a class="top_opcion">RANKING</a>
+                <a class="top_opcion">MÁS VISTAS</a>
+                <a class="top_opcion">VER MÁS</a>
+              </div>
+              <div class="list_peliculas">
+                <figure class="peliculas">
+                  <img class="img_pelicula" src="./imagenes/img_base.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Hawkeye</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/categorias/guerra.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Rambo 1° Sangre</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/categorias/misterio.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Adam Proyect</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/categorias/documental.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Jackass Forever</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/categorias/crimen.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">
+                    Secretos del Pas.
+                  </figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/categorias/familia.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Baby's Day Out</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/a_ciegas.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">A Ciegas</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/batman.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">The Batman</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/el_protegido.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">El protegido</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/morbius.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Morbius</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/red.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Red</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/jugar en casa.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Jugar en Casa</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/ovni.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Onvi</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/windfall.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Wind Fall</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/no exit.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">No Exit</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/al viento.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Al Viento</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/kimi.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Kimi</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/pursuit.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">PurSuit</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/el privilegio.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">El Privilegio</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/sin respiro.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Sin Respiro</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/cherry.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Cherry</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/4 mitades.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">$ Mitades</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/Deep Water.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Deep Water</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/descenso.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Descenso</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/un bucle sin fin.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Un Bucle Sin Fin</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/cenicienta.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Hawkeye</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/anonima.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Anónima</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/el diario de greg.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">
+                    El Diario de Greg
+                  </figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/locked down.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Locked Down</figcaption>
+                </figure>
+                <figure class="peliculas">
+                  <img
+                    class="img_pelicula"
+                    src="./imagenes/peliculas/moxie.jpg"
+                  />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_pelicula">Moxie</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="series">
+              <div class="top">
+                <h1 class="titulo">Series</h1>
+                <a class="top_opcion">VER MÁS</a>
+              </div>
+              <div class="list_series">
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/amor divido.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Amor dividido</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/archivo 81.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Archivo 81</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/cielo grande.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Cielo Grande</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/el turista.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">El Turista</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/estamos muertos.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Estamos Muertos</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/feria.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Feria</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/fidelidad.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Fidelidad</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/himyf.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">HIMYF</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/hype house.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Hype House</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/la elegida.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">La Elegida</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/loki.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Loki</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/pachinko.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Pachinko</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/peacemaker.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Peacemaker</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/reacher.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Reacher</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/separacion.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Separación</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/sospechosos.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Sospechosos</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/soy georgina.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Soy Georgina</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/squid game.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Squid Game</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/the boys.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">The Boys</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/the dropout.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">The Dropout</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/wecrashed.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">WeCrashed</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/naomi.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Naomi</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/lakers.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Lakers</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/life&beth.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Life & Beth</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/murderville.jpg" />
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Murderville</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/dmz.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">DMZ</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/rebelde.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Rebelde</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/trese.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Trese</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/what if.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">What If...?</figcaption>
+                </figure>
+                <figure class="series">
+                  <img class="img_series" src="./imagenes/series/invencible.jpg"/>
+                  <img src="./imagenes/HD.png" id="hd" />
+                  <figcaption class="cap_series">Invencible</figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+          <div class="main_vertical">
+            <div class="redes">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">REDES SOCIALES</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_redes">
+                <div class="red">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="red">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="red">
+                <i class="fa-brands fa-instagram red"></i>
+                </div>
+                <div class="red">
+                  <i class="fa-brands fa-youtube red"></i>
+                </div>
+
+              </div>
+            </div>
+            <div class="filtro_idioma">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">IDIOMAS</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+                <div class="contenido_idioma">
+                  <div class="idioma">
+                    <img src="./imagenes/idiomas/español.png">
+                  </div>
+                  <div class="idioma">
+                    <img src="./imagenes/idiomas/subtitulado.png">
+                  </div>
+                  <div class="idioma">
+                    <img src="./imagenes/idiomas/latino.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="peliculas_recomendadas">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">PELICULAS RECOMENDADAS</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_pelis_recomendadas">
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/4 mitades.jpg" />
+                  <figcaption class="cap_peli_recomendada">4 Mitades</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/a_ciegas.jpg" />
+                  <figcaption class="cap_peli_recomendada">A ciegas</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/al viento.jpg" />
+                  <figcaption class="cap_peli_recomendada">Al Viento</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/anonima.jpg" />
+                  <figcaption class="cap_peli_recomendada">Anónima</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/batman.jpg" />
+                  <figcaption class="cap_peli_recomendada">The Batman</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/cenicienta.jpg" />
+                  <figcaption class="cap_peli_recomendada">Cenicienta</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/cherry.jpg" />
+                  <figcaption class="cap_peli_recomendada">Cherry</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/Deep Water.jpg" />
+                  <figcaption class="cap_peli_recomendada">Deep Water</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/descenso.jpg" />
+                  <figcaption class="cap_peli_recomendada">El Descenso</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/dynasty.jpg" />
+                  <figcaption class="cap_peli_recomendada">Dynasty Warriors</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/el diario de greg.jpg" />
+                  <figcaption class="cap_peli_recomendada">El Diario de Greg</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/el privilegio.jpg" />
+                  <figcaption class="cap_peli_recomendada">El Privilegio</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/el_protegido.jpg" />
+                  <figcaption class="cap_peli_recomendada">El Protegido</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/fast furious.jpg" />
+                  <figcaption class="cap_peli_recomendada">Fast and Furious 9</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/jugar en casa.jpg" />
+                  <figcaption class="cap_peli_recomendada">Jugar en Casa</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/kimi.jpg" />
+                  <figcaption class="cap_peli_recomendada">Kimi</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/locked down.jpg" />
+                  <figcaption class="cap_peli_recomendada">Locked Down</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/morbius.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Morbius</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/moxie.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Moxie</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/no exit.jpg"/>
+                  <figcaption class="cap_peli_recomendada">No Exit</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/ovni.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Ovni</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/pursuit.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Pursuit</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/red.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Red</figcaption>
+                </figure>
+                <figure class="peli_recomendada">
+                  <img class="img_peli_recomendada" src="./imagenes/peliculas/shang chi.jpg"/>
+                  <figcaption class="cap_peli_recomendada">Shang chi</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="series_recomendadas">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">SERIES RECOMENDADAS</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_series_recomendadas">
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/amor divido.jpg" />
+                  <figcaption class="cap_serie_recomendada">Amor dividido</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/archivo 81.jpg" />
+                  <figcaption class="cap_serie_recomendada">Archivo 81</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/cielo grande.jpg" />
+                  <figcaption class="cap_serie_recomendada">Cielo Grande</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/el turista.jpg" />
+                  <figcaption class="cap_serie_recomendada">El Turista</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/estamos muertos.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Estamos Muertos</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/feria.jpg" />
+                  <figcaption class="cap_serie_recomendada">Feria</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/fidelidad.jpg" />
+                  <figcaption class="cap_serie_recomendada">Fidelidad</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/himyf.jpg"/>
+                  <figcaption class="cap_serie_recomendada">HIMYF</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/hype house.jpg" />
+                  <figcaption class="cap_serie_recomendada">Hype House</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/la elegida.jpg" />
+                  <figcaption class="cap_serie_recomendada">La Elegida</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/loki.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Loki</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/pachinko.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Pachinko</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/peacemaker.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Peacemaker</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/reacher.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Reacher</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/separacion.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Separación</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/sospechosos.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Sospechosos</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/soy georgina.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Soy Georgina</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/squid game.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Squid Game</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/the boys.jpg"/>
+                  <figcaption class="cap_serie_recomendada">The Boys</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/the dropout.jpg"/>
+                  <figcaption class="cap_serie_recomendada">The Dropout</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/wecrashed.jpg"/>
+                  <figcaption class="cap_serie_recomendada">WeCrashed</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/naomi.jpg" />
+                  <figcaption class="cap_serie_recomendada">Naomi</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/lakers.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Lakers</figcaption>
+                </figure>
+                <figure class="serie_recomendada">
+                  <img class="img_serie_recomendada" src="./imagenes/series/life&beth.jpg"/>
+                  <figcaption class="cap_serie_recomendada">Life & Beth</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="chat">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">CHAT</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_chat">
+                <a class="top_opcion">CHAT ONLINE</a>
+                <a class="top_opcion">CHAT VIP</a>
+            </div>
+            </div>
+            <div class="zona_terror">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">ZONA DE TERROR</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_zona_terror">
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/el conjuro 3.jpg"/>
+                  <figcaption class="cap_terror_recomendada">El Conjuro 3</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/eli.jpg" />
+                  <figcaption class="cap_terror_recomendada">Eli</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/host.jpg" />
+                  <figcaption class="cap_terror_recomendada">Host</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/maligno.jpg" />
+                  <figcaption class="cap_terror_recomendada">Maligno</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/nosotros.jpg" />
+                  <figcaption class="cap_terror_recomendada">Nosotros</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/ruegaxnosotros.jpg" />
+                  <figcaption class="cap_terror_recomendada">Ruega Por Nosotros</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/scream 5.jpg" />
+                  <figcaption class="cap_terror_recomendada">Scream 5</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/son.jpg" />
+                  <figcaption class="cap_terror_recomendada">Son</figcaption>
+                </figure>
+                <figure class="terror_recomendada">
+                  <img class="img_terror_recomendada" src="./imagenes/peliculas/terror/viejos.jpg"/>
+                  <figcaption class="cap_terror_recomendada">Old</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="generos">
+              <div class="titulo_main_vertical">
+                <h3 class="h_titulo">GENEROS</h3>
+                <div class="separador">
+                  <div class="barra_separador"></div>
+                  <hr class="hr_separador" />
+                </div>
+              </div>
+              <div class="contenido_generos">
+                  <a class="genero accion">ACCIÓN</a>
+                  <a class="genero animacion">ANIMACIÓN</a>
+                  <a class="genero anime">ANIME</a>
+                  <a class="genero aventura">AVENTURA</a>
+                  <a class="genero belica">BÉLICA</a>
+                  <a class="genero comedia">COMEDIA</a>
+                  <a class="genero crimen">CRIMEN</a>
+                  <a class="genero documental">DOCUMENTAL</a>
+                  <a class="genero drama">DRAMA</a>
+                  <a class="genero familia">FAMILIA</a>
+                  <a class="genero fantasia">FANTASIA</a>
+                  <a class="genero misterio">MISTERIO</a>
+                  <a class="genero musica">MÚSICA</a>
+                  <a class="genero romance">ROMANCE</a>
+                  <a class="genero sci">SCI-FI</a>
+                  <a class="genero suspenso">SUSPENSE</a>
+                  <a class="genero terror">TERROR</a>
+                  <a class="genero western">WESTERN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <footer class="pie">
+        <span class="logo_pie"><img src="./imagenes/logo_cine24h.png" /></span>
+      <div class="nav_pie">
+            <a class="elemento_pie">
+              <i class="fa-solid fa-dollar-sign i_pie"></i>
+              DONAR
+            </a>
+            <a class="elemento_pie">
+              <i class="fa-solid fa-address-card"></i>
+              CONTÁCTANOS
+            </a>
+            <a class="elemento_pie">
+              <i class="fa-solid fa-film"></i>
+              TRÁILER
+            </a>
+            <a class="elemento_pie">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              DMCA
+            </a>
+      </div>
+      <div class="redes_pie">
+        <div class="red_pie">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="red_pie">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="red_pie">
+        <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="red_pie">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

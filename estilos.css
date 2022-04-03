@@ -1,23 +1,35 @@
 *{
     margin:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background:#ffc107;
+    border-radius: 5px;
+}
+
+
 body{
-    background-image: url('https://cine24h.net/wp-content/uploads/2018/10/background.png');
+   background-image: url('./imagenes/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .navegador{
-    width: 100wh;
+    width: 100%;
     height: 90px;
     background-color: #212121;
     display: flex;
-    justify-content: center;
     background-color: #00000099;
 }
 
 .contenedor{
     width: 80%;
     display: flex;
-    height: 100%;
+    margin-left: 10%;
 }
 
 .logo{
@@ -27,7 +39,6 @@ body{
 } 
 
 .elemento_nav{
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     position: relative;
     bottom: 25%;
@@ -41,27 +52,34 @@ body{
 
 .buscador{
     height: 100%;
-    width: 160;
+    width: 160x;
     position: relative;
-    left: 17%;
+    left: 10%;
+    border-radius: 25px;
 }
-
 .caja_buscador{
-    width: 100%;
+    font-size: 14px;
+    width: 70%;
     vertical-align: middle;
-    height: 40%;
+    height: 45%;
     position: relative;
     top: 25%;
-    border-radius:25px;
-    background-image: url('./imagenes/lupa.png');
-    background-position: left;
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
+    border-radius: 25px;
     border: 2px solid #9c27b0;
     background-color: rgba(0,0,0,.6);
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 35px;
 }
-
+#lupa{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+    padding-right: 20px;
+}
 /*siempre que queremos poner un icono hay que llamar a .fa o .fas porqué en realidad lo que hacen es llamar la font-family.*/
 .fa,
 .fas {
@@ -97,19 +115,501 @@ body{
 
 
 /*CONTENEDOR*/
-.contenido{
+.contenido, .pie{
     width: 80%;
-    height: 100vh;
-    position: absolute;
+    position: relative;
     left: 10%;
     padding: 18px 0;
     margin-top: 20px;
-    border-radius: 1%;
+    border-radius: 5px;
     background-color:  #00000099;
+}
+.pie{
+    padding: 20px 0;
+    margin-top: 30px;
+    margin-bottom: 3vh;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 15% 50% 20%;
+    grid-template-rows: 100%;
 }
 
 .container{
-    height: 100vh;
-    background-color: #212121;
+    background-color:transparent;
     padding: 0 20px;
+}
+
+/*CATEGORIAS*/
+.categorias{
+    background-color: transparent;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 12.15% 12.15% 12.15% 12.15% 12.15% 12.15% 12.15% 12.15%;
+    grid-column-gap: .35%;
+    grid-template-rows: 22.667vh;
+}
+.cat{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.img_cat{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+.cap_cat{
+    position: relative;
+    top: -50%;
+    color:#ffffff;
+}
+
+
+/*MAIN*/
+.main{
+    display: grid;
+    height: auto;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+}
+.main_contenido{
+    background-color: transparent;
+    padding-right: 20px;
+}
+.main_vertical{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 21.5vh 21.5vh 150vh 150vh 21.5vh 65vh 72vh;
+    grid-row-gap: 20px;
+}
+
+
+/*TOP*/
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.titulo{
+    color: #ffffff;
+    font-size: 30px;
+}
+.top_opcion{
+    vertical-align: middle;
+    padding: 0 16px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 16px 5px 16px;
+    border-radius: 25px;
+    background-color: #00000099;
+    margin-left: 16px;
+}
+
+/*ESTRENOS*/
+.list_estrenos{
+    background-color: transparent;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 12.15% 12.15% 12.15% 12.15% 12.15% 12.15% 12.15% 12.15%;
+    grid-column-gap: .35%;
+    grid-template-rows: 20.3vh;
+    height: 25vh;
+}
+.estrenos, .peliculas, .series{
+    text-align: center;
+    border-radius: 15px;
+}
+.img_estreno, .img_pelicula, .img_series, .img_peli_recomendada, .img_serie_recomendada, .img_terror_recomendada{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+#hd{
+    position: relative;
+    top:-103%;
+    float: right;
+    margin-right: -2px;
+    z-index: 2;
+}
+.cap_estreno, .cap_pelicula, .cap_series{
+    position: relative;
+    z-index: 3;
+    bottom: 21%;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #00000099;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/*PELICULAS*/
+.list_peliculas, .list_series{
+    display: grid;
+    grid-template-columns: 19.5% 19.5% 19.5% 19.5% 19.5%;
+    grid-template-rows: 240px 240px 240px 240px 240px 240px;
+    grid-column-gap: 0.625%;
+    grid-row-gap: 10px;
+    margin-bottom:  20px;
+}
+.cap_pelicula, .cap_series{
+    bottom: 11.5%;
+}
+
+/*REDES*/
+.redes, .filtro_idioma, .filtro_anio,.chat, .generos{
+    background-color: #00000099;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50% 50% 100%;
+    color: #ffffff;
+}
+.peliculas_recomendadas, .series_recomendadas, .zona_terror{
+    background-color: #00000099;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50%;
+    color: #ffffff;
+}
+/*BARRA DE TITULO GENERAL*/
+.titulo_main_vertical{
+    width: 80%;
+    height: 20vh;
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 80%;
+    grid-template-rows: 10% 10%;
+}
+.h_titulo{
+    color: #ffffff;
+    width: 140%;
+    font-size: 14px;
+    position: relative;
+    top: 100%;
+}
+.barra_separador{
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    height: 5px;
+    margin-bottom: -2px;
+    top: 150%;
+    background-color: #ffc107;
+}
+.hr_separador{
+    width: 120%;
+    position: relative;
+    z-index: 0;
+    top:150%;
+    background-color: #78909C;
+    height: 1px;
+    opacity: .1;
+}
+
+/*LISTA REDES*/
+.contenido_redes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:60%;
+    margin-left: 10%;
+}
+.red{
+    background-color: #000000;
+    border-radius: 150%;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.fa-facebook-f, .fa-twitter, .fa-instagram, .fa-youtube{
+    position: relative;
+    top: 25%;
+}
+
+
+/*LISTA IDIOMAS*/
+.contenido_idioma{
+    width: 100%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100%;
+    grid-column-gap: 10px;
+}
+.idioma{
+    position: relative;
+    top: 30%;
+}
+
+
+/*PELICULAS RECOMENDADAS*/
+.contenido_pelis_recomendadas,.contenido_series_recomendadas,.contenido_zona_terror{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh;
+    margin-left: 6%;
+    grid-column-gap: 2%;
+    grid-row-gap: 7px;
+    text-align: center;
+}
+.cap_peli_recomendada,.cap_serie_recomendada, .cap_terror_recomendada, .cap_terror_recomendada{
+    position: relative;
+    z-index: 3;
+    bottom: 40%;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/*CHAT*/
+.contenido_chat{
+    display: grid;
+    grid-template-columns: 51% 41%;
+    grid-template-rows: 35%;
+}
+
+/*ZONA TERROR*/
+.contenido_zona_terror{
+    position: relative;
+    top:15%;
+    grid-template-rows: 16.5vh 16.5vh 16.5vh;
+}
+
+/*GENEROS*/
+.contenido_generos{
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh;
+    grid-row-gap: 2%;
+    text-align: center;
+    line-height: 6vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-column-gap: 5%;
+    position: relative;
+    bottom:80%;
+}
+.genero{
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 50px;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.accion{background-image: url('./imagenes/peliculas/batman.jpg');background-color: #623969;}
+.animacion{background-image: url('./imagenes/peliculas/red.jpg');background-color: #212c37;}
+.anime{background-image: url('./imagenes/generos/anime.jpg');background-color: #425a54;}
+.aventura{background-image: url('./imagenes/generos/aventura.jpg');background-color: #576939;}
+.belica{background-image: url('./imagenes/generos/belica.jpg');background-color: #c09256;}
+.comedia{background-image: url('./imagenes/generos/comedia.jpg');background-color: #a03b58;}
+.crimen{background-image: url('./imagenes/generos/crimen.jpg');background-color: #200825;}
+.documental{background-image: url('./imagenes/generos/documental.jpg');background-color: #a8ba90;}
+.drama{background-image: url('./imagenes/generos/drama.jpg');background-color: #131458;}
+.familia{background-image: url('./imagenes/generos/familia.jpg');background-color: #76bf97;}
+.fantasia{background-image: url('./imagenes/generos/fantasia.jpg');background-color: #0f4026;}
+.misterio{background-image: url('./imagenes/generos/misterio.jpg');background-color: #4f7043;}
+.musica{background-image: url('./imagenes/generos/musical.jpg');background-color: #aae36c;}
+.romance{background-image: url('./imagenes/generos/romance.jpg');background-color: #4c677b;}
+.sci{background-image: url('./imagenes/generos/sci\ fi.jpg');background-color: #479dbc;}
+.suspenso{background-image: url('./imagenes/generos/suspenso.jpg');background-color: #224b35;}
+.terror{background-image: url('./imagenes/generos/terror.jpg');background-color: #97c18f;}
+.western{background-image: url('./imagenes/generos/western.jpg');background-color: #292a34;}
+
+/*FOOTER*/
+.logo_pie{
+    width: 100%;
+    position: relative;
+    bottom:20%;
+}
+.nav_pie{
+    display: grid;
+    grid-template-columns: 15% 25% 15% 15%;
+    grid-template-rows: 100%;
+    grid-column-gap: 5%;
+}
+.elemento_pie{
+    color: #ffffff;
+    position: relative;
+    line-height: 8vh;
+    font-size: 14px;
+}
+.i_pie{
+    margin-right: 5px;
+}
+
+/*REDES SOCIALES FOOTER*/
+.redes_pie{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    color: #ffffff;
+    text-align: center;
+    grid-column-gap: 10px;
+    position: relative;
+    left: 70%;
+    top: 15%;
+}
+.red_pie{
+    background-color: #000000;
+    border-radius: 75%;
+    width: 6vh;
+    height: 6vh;
+    align-content: center;
+}
+
+/*resposive*/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        position: relative;
+        left: -12%;
+    } 
+    .elemento_nav{
+        padding:0 2px;
+        left: -18%;
+        font-size: 9px;
+    }
+    .contenedor{
+        width: 768px;
+    }
+    .nav_principal{
+        width: 120%;
+    }
+    .buscador{
+        left: 0%;
+    }
+    .cap_cat{
+        font-size: 9px;
+    }
+    .main{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 75% 25%;
+    }
+    .contenido{
+        height: 7000px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo{
+        position: relative;
+        left: -15%;
+    } 
+    .contenedor{
+        width: 100%;
+    }
+    .buscador{
+        left: 3%;
+    }
+    .elemento_nav{
+        padding:0 5px;
+        left: -15%;
+    }
+    .nav_principal{
+        width: 100%;
+    }
+    .cap_cat{
+        font-size: 12px;
+    }
+    .cap_pelicula, .cap_series{
+        bottom:20%;
+        font-size: 10px;
+    }
+
+    .nav_pie{
+        grid-template-columns: 20% 35% 20% 20%;
+    }
+    .list_peliculas, .list_series{
+        grid-template-rows: 168px 168px 168px 168px 168px 168px;
+    }
+    .list_estrenos{
+        grid-template-rows: 18vh;
+    }
+    .contenido_pelis_recomendadas,.contenido_series_recomendadas,.contenido_zona_terror{
+        grid-template-rows:13.5vh 13.5vh 13.5vh 13.5vh 13.5vh 13.5vh 13.5vh 13.5vh;
+    }
+    .cap_peli_recomendada,.cap_serie_recomendada, .cap_terror_recomendada, .cap_terror_recomendada{
+        font-size: 9px;
+    }
+    .genero{
+        font-size: 10px;
+    }
+    /*MAIN*/
+.main{
+    display: grid;
+    height: auto;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .logo{
+        position: relative;
+        left: 0%;
+    } 
+    .contenedor{
+        width: 80%;
+    }
+    .buscador{
+        left: 5%;
+    }
+    .elemento_nav{
+        padding:0 16px;
+        font-size: 14px;
+        left: 0%;
+    }
+    .cap_cat{
+        font-size: 12px;
+    }
+    .cap_pelicula, .cap_series{
+        bottom: 21%;
+        font-size: 12px;
+    }
+
+    .nav_pie{
+        grid-template-columns: 20% 35% 20% 20%;
+    }
+    .list_peliculas, .list_series{
+        grid-template-columns: 19.5% 19.5% 19.5% 19.5% 19.5%;
+        grid-template-rows: 240px 240px 240px 240px 240px 240px;
+    }
+    .list_estrenos{
+        grid-template-rows: 20.3vh;
+    }
+    .contenido_pelis_recomendadas,.contenido_series_recomendadas,.contenido_zona_terror{
+        grid-template-columns: 28% 28% 28%;
+        grid-template-rows: 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh 16.5vh;
+    }
+    .cap_peli_recomendada,.cap_serie_recomendada, .cap_terror_recomendada, .cap_terror_recomendada{
+        font-size: 9px;
+    }
+    .genero{
+        font-size: 10px;
+    }
+
+    /*MAIN*/
+.main{
+    display: grid;
+    height: auto;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+}
 }
